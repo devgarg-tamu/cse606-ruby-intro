@@ -23,11 +23,11 @@ end
 # Part 2
 
 def hello(name)
-  # YOUR CODE HERE
+  "Hello, #{name}"
 end
 
 def starts_with_consonant?(string)
-  # YOUR CODE HERE
+  !!string.match(/^[b-df-hj-np-tv-z]/i)
 end
 
 def binary_multiple_of_4?(string)
