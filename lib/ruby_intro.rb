@@ -11,7 +11,13 @@ def max_2_sum(arr)
 end
 
 def sum_to_n?(arr, number)
-  # YOUR CODE HERE
+  arr.each_with_index do |a, i|
+    arr.each_with_index do |b, j|
+      next if i == j 
+      return true if a + b == number
+    end
+  end
+  false
 end
 
 # Part 2
